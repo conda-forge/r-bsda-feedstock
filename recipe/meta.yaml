@@ -1,4 +1,4 @@
-{% set version = '1.2.0' %}
+{% set version = "1.2.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/BSDA_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/BSDA/BSDA_{{ version }}.tar.gz
-  sha256: a2deea4f772d0db74f35ea502ea8cd827b455ac4c795591c69b210c5bc1f433f
+  sha256: e2f1cb8fe07e8bdf1a813f20519bad4d1836d6945fc49c4dae40bf99031c8e6d
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
 
@@ -48,7 +48,7 @@ about:
 
   license_family: GPL2
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
