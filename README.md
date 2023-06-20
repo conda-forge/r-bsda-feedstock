@@ -1,11 +1,11 @@
-About r-bsda
-============
+About r-bsda-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-bsda-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=BSDA
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-bsda-feedstock/blob/main/LICENSE.txt)
 
 Summary: Data sets for book "Basic Statistics and Data Analysis" by Larry J. Kitchens.
 
