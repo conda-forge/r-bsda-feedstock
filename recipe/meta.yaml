@@ -1,4 +1,4 @@
-{% set version = "1.2.1" %}
+{% set version = "1.2.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/BSDA_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/BSDA/BSDA_{{ version }}.tar.gz
-  sha256: e2f1cb8fe07e8bdf1a813f20519bad4d1836d6945fc49c4dae40bf99031c8e6d
+  sha256: 8bbe79a6b596c964c82a6fb53ec5d7aab6c0d353231ef1fe5f2adba244c7f244
 
 build:
   merge_build_host: true  # [win]
-  number: 2
+  number: 0
   noarch: generic
 
   rpaths:
